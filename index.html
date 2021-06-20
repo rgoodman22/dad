@@ -42,42 +42,21 @@
             <span id="typed"></span>
           </div>
       </div>
-    <img id = "mike" class = "image" src = "mike.jpeg" >
-    <img id = "fam" class = "image" src = "fam.jpeg" >  
+    <img id = "im" class = "image" src = "mike.jpeg" >
     <script>
       var options = {
         strings: [
           `<span>Hey Dad,</span>^1000\n\nYou're fine, I guess.\n\n`,
-          `You don't have a ton of hair^1800 \nbut you're really cute anyways`,
-          `Do you know who else didn't have any hair? ^1000 \n\n Michael Jordan ^1000 \nMaybe you're the Michael Jordan of fathers...`,
-          'You are our <span class="line-through">travel</span> desert buddy.',
-          `You are our wine time star.`,
-          'You are our <span class="line-through">wine time</span> shining star.',
-          `You are our style expert.`,
-          'You are our <span class="line-through">style</span> climate expert.',
-          'You are our <span class="line-through">style climate</span> everything expert.',
-          'You are our life expert.',
-          'You are a trailblazer.^1800\n\nAnd our loving social butterfly.\n\n', 
-          `Here\'s a THANK YOU from your kids.^1000\n\nFor^1000 realizing when we need you \nto open the complaint department...`,
-          `Here\'s a THANK YOU from your kids.\n\nFor always being there for us...`,
-          `Here\'s a THANK YOU from your kids.\n\nFor putting our happiness before your own...^1000\n\nBut still kicking ass everyday.`,
-          `You are truly the greatest Mom ever.`,
-          'So thank you, and Happy Mothers Day Mom!^1000\n\nYou\'re the best and you deserve the world!',
-          'Love Natalie, Robbie and Matt',
-          'Love Natalie, Robbie and Matt \n\n AND your BIGGEST fan Maggie!',
-          'Love Natalie, Robbie and Matt \n\n AND your BIGGEST fan <span class="line-through">Maggie</span> Maggastiny!',
-          'Love Natalie, Robbie and Matt \n\n AND your BIGGEST fan <span class="line-through">Maggie</span> \n Maggastiny-weenie-teenie!',
-          'Love Natalie, Robbie and Matt \n\n AND your BIGGEST fan Maggiepuff!',
-          'Love Natalie, Robbie and Matt \n\n AND your BIGGEST fan <span class="line-through">Maggie</span> Puffenstein!',
-          'Love Natalie, Robbie and Matt \n\n AND your BIGGEST fan <span class="line-through">Maggie</span> Puffenstein! \n\n LOVE YOU MILLION ZILLION!!'
+          `You don't have a ton of hair^1800\nbut you're really cute anyways`,
+          `Do you know who else didn't have any hair?^1000\n\nMichael Jordan ^1000\nMaybe you're the Michael Jordan of fathers...`,
+          `You are not the fastest walker^1000\nBut you are our greatest honor^1000\nThe practical pragmatic quick talker^1000\nConsumer reports big time father^1000\n\nYou maintain the quick wit^1000\nYou hit us with some really good zingers^1000\nYou always forget to quiddit^1000\nYou became the big sluggin slinger`,
+          `Words with friends became your battle ground^1000\nThese games were never sound^1000\nYou win, we lose^500\nWe cheat, you snooze^1000\n\nYour snores are our song^1000\nThey are terribly very long^1000\nThey wake mom up with a bang^1000\nEven so, we are ready to hang^1000\nCause we're one big family gang.^1000`
         ],
         typeSpeed: 40,
         backSpeed: 10,
         backDelay: 1500,
         smartBackspace: true
       };
-      var img = new Image();
-      img.src = "fam.jpeg"
       var playing = false
       function play() {
         var audio = new Audio('pinball.mp3');
@@ -88,20 +67,24 @@
         var typed = new Typed("#typed", options);
         setTimeout(showMike, 18000);
         setTimeout(hideMike, 21000);
-        setTimeout(showFam, 90500);
+        setTimeout(showFam, 10000000);
       }
-      function showFam(){
-        document.getElementById('fam').style.visibility = "visible"        
-       }
       function showMike(){
-        document.getElementById('mike').style.visibility = "visible"
+        document.getElementById('im').style.visibility = "visible"
       }
       function hideMike(){
-        document.getElementById('mike').style.visibility = "hidden"
+        document.getElementById('im').style.visibility = "hidden"
+      }
+      function showFam(){
+        document.getElementById('im').src="fam.jpeg";
+        document.getElementById('im').style.visibility="visible"
       }
     </script>
   </body>
 </html>
+
+
+
 
 
 
